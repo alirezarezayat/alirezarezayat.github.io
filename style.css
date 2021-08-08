@@ -1,5 +1,9 @@
-html {
+
+body {
   backgruond-image:url('jasper-lake.jpg');
+}
+
+html {
   background-color:#00aaaa;
 }
 
