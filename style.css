@@ -1,5 +1,10 @@
 
 body {
+background-color:#ffffff;
+  border-radius:10px;
+  height:auto;
+  margin:5px;
+  padding:5px;
 }
 
 header {
@@ -14,9 +19,5 @@ html {
 }
 
 #main {
-  background-color:#ffffff;
-  border-radius:10px;
-  height:auto;
-  margin:5px;
-  padding:5px;
+  
 }
