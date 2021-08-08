@@ -1,3 +1,8 @@
 html {
   background-color:#00aaaa;
 }
+
+#main {
+  height:auto;
+  margin:5px;
+}
