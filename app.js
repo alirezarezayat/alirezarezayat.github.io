@@ -7,6 +7,8 @@ fetch("https://api.github.com/users/alirezarezayat")
       .then((result) => result.json())
       .then((data) => {
         console.log(data);
+        console.log(typeof data);
+        console.log({ data });
         // console.log(data.length());
         console.log(data[0]);
         console.log(data[0].id);
