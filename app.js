@@ -2,6 +2,7 @@ fetch("https://api.github.com/users/alirezarezayat")
   .then((result) => result.json())
   .then((data) => {
     document.getElementById("avatar").src = `${data.avatar_url}`;
+    document.getElementById("page-title").innerHTML = `${data.name}`;
     document.getElementById("name").innerHTML = `${data.name}`;
     fetch(data.repos_url)
       .then((result) => result.json())
