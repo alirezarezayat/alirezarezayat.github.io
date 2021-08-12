@@ -10,6 +10,9 @@ fetch("https://api.github.com/users/alirezarezayat")
     fetch(data.repos_url)
       .then((result) => result.json())
       .then((data) => {
+        for (let variable in data) {
+          console.log(variable);
+        }
         console.log(data);
         console.log(typeof data);
         console.log({ data });
