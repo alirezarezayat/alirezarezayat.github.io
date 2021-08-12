@@ -13,8 +13,8 @@ fetch("https://api.github.com/users/alirezarezayat")
         for (let variable in data) {
           console.log(data[variable]);
           document.getElementById("repositories").innerHTML = 
-            <a href={data[variable].html_url}>
-              <li>{data[variable].name}</li>
+            <a href=`${data[variable].html_url}`>
+              <li>`${data[variable].name}`</li>
             </a>
           ;
         }
