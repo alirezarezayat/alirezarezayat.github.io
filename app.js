@@ -12,12 +12,11 @@ fetch("https://api.github.com/users/alirezarezayat")
       .then((data) => {
         for (let variable in data) {
           console.log(data[variable]);
+          document.getElementById("repositories").innerHTML = (
+            <a href={data[variable].html_url}>
+              <li>{data[variable].name}</li>
+            </a>
+          );
         }
-        console.log(data);
-        console.log(typeof data);
-        console.log({ data });
-        console.log(data[0]);
-        console.log(data[0].id);
       });
-    document.getElementById("repositories").innerHTML = data.repos_url;
   });
