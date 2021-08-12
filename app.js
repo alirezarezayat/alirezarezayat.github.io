@@ -11,7 +11,7 @@ fetch("https://api.github.com/users/alirezarezayat")
       .then((result) => result.json())
       .then((data) => {
         for (let variable in data) {
-          console.log(variable);
+          console.log(data[variable]);
         }
         console.log(data);
         console.log(typeof data);
