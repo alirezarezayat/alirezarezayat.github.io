@@ -7,6 +7,7 @@ fetch("https://api.github.com/users/alirezarezayat")
       .then((result) => result.json())
       .then((data) => {
         console.log(data);
+        console.log(data.length());
       });
     document.getElementById("repositories").innerHTML = data.repos_url;
   });
