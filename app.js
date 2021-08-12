@@ -6,13 +6,13 @@ fetch("https://api.github.com/users/alirezarezayat")
     document.getElementById("page-title").innerHTML = `${data.name}`;
     document.getElementById("name").innerHTML = `${data.name}`;
     document.getElementById("bio").innerHTML = `${data.bio}`;
+    document.getElementById("my-github-url").src = `${data.html_url}`;
     fetch(data.repos_url)
       .then((result) => result.json())
       .then((data) => {
         console.log(data);
         console.log(typeof data);
         console.log({ data });
-        // console.log(data.length());
         console.log(data[0]);
         console.log(data[0].id);
       });
