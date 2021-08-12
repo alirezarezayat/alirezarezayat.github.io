@@ -15,7 +15,11 @@ fetch("https://api.github.com/users/alirezarezayat")
           console.log(data[variable].name);
           document.getElementById(
             "repositories"
-          ).innerHTML += `<li><a>1111</a></li>`;
+          ).innerHTML += `<li id="repos-${variable}">
+            <a id="${data[variable].name}" href="${data[variable].html_url}">
+                ${data[variable].name}
+            </a>
+          </li><p>${description}</p>`;
         }
       });
   });
