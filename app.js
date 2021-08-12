@@ -1,1 +1,5 @@
-fetch('https://api.github.com/users/alirezarezayat').then(result=>result.json()).then(data=>console.log(data));
+fetch("https://api.github.com/users/alirezarezayat")
+  .then((result) => result.json())
+  .then((data) => {
+    document.getElementById("avatar").src = `${data.avatar_url}`;
+  });
