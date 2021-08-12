@@ -19,6 +19,7 @@ html {
   background-attachment: fixed;
 }
 
-#main {
-  
+#avatar {
+  width: 100px;
+  height: 100px;
 }
