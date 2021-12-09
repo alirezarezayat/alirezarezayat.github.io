@@ -19,7 +19,14 @@ fetch("https://api.github.com/users/alirezarezayat")
             <a id="${data[variable].name}" href="${data[variable].html_url}">
                 ${data[variable].name}
             </a>
-          </li><p>${data[variable].description}</p>`;
+          </li>
+          <p>
+            page of this repository is : 
+            <a href="https://alirezarezayat.github.io/${data[variable].name}">
+              ${data[variable].name}
+            </a>
+          </p>
+          <p>${data[variable].description}</p>`;
         }
       });
   });
