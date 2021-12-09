@@ -15,7 +15,7 @@ fetch("https://api.github.com/users/alirezarezayat")
           console.log(data[variable].name);
           document.getElementById(
             "repositories"
-          ).innerHTML += `<div id="repos-div-${variable}">
+          ).innerHTML += `
             <li id="repos-${variable}">
               <a id="${data[variable].name}" href="${data[variable].html_url}">
                   ${data[variable].name}
@@ -28,7 +28,7 @@ fetch("https://api.github.com/users/alirezarezayat")
               </a>
             </p>
             <p>${data[variable].description}</p>
-          </div>`;
+          `;
         }
       });
   });
