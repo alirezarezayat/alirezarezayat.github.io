@@ -20,12 +20,14 @@ fetch("https://api.github.com/users/alirezarezayat")
                 ${data[variable].name}
             </a>
           </li>
+          {data[variable].has_pages?
           <p>
             page of this repository is : 
             <a href="https://alirezarezayat.github.io/${data[variable].name}">
               ${data[variable].name}
             </a>
           </p>
+          :null}
           <p>${data[variable].description}</p>`;
         }
       });
