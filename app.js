@@ -15,18 +15,20 @@ fetch("https://api.github.com/users/alirezarezayat")
           console.log(data[variable].name);
           document.getElementById(
             "repositories"
-          ).innerHTML += `<li id="repos-${variable}">
-            <a id="${data[variable].name}" href="${data[variable].html_url}">
+          ).innerHTML += `<div id="repos-div-${variable}">
+            <li id="repos-${variable}">
+              <a id="${data[variable].name}" href="${data[variable].html_url}">
+                  ${data[variable].name}
+              </a>
+            </li>
+            <p>
+              page of this repository is : 
+              <a href="https://alirezarezayat.github.io/${data[variable].name}">
                 ${data[variable].name}
-            </a>
-          </li>
-          <p>
-            page of this repository is : 
-            <a href="https://alirezarezayat.github.io/${data[variable].name}">
-              ${data[variable].name}
-            </a>
-          </p>
-          <p>${data[variable].description}</p>`;
+              </a>
+            </p>
+            <p>${data[variable].description}</p>
+          </div>`;
         }
       });
   });
