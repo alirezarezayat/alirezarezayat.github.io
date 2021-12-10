@@ -23,3 +23,9 @@ html {
   width: 100px;
   height: 100px;
 }
+
+#repos-div {
+  background: #ccc;
+  border-radius: 25px;
+  margin:5px;
+}
