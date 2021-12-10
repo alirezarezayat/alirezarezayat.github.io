@@ -23,7 +23,7 @@ fetch("https://api.github.com/users/alirezarezayat")
             </li>
             <p>
               page of this repository is : 
-              <a href="https://alirezarezayat.github.io/${data[variable].name}">
+              <a href="https://alirezarezayat.github.io/${data[variable].name}" target="_blank">
                 ${data[variable].name}
               </a>
             </p>
