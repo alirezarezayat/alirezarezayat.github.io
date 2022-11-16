@@ -20,10 +20,10 @@ html {
     background-attachment: fixed;
 }
 
-#avatar {
-    width: 100px;
-    height: 100px;
-}
+/* .my-avatar {
+    width: 6em;
+    height: 6em;
+} */
 
 #repositories {
     padding-inline-start: 5px;

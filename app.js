@@ -11,8 +11,8 @@ fetch("https://api.github.com/users/alirezarezayat")
       .then((result) => result.json())
       .then((data) => {
         for (let variable in data) {
-          console.log(data[variable]);
-          console.log(data[variable].name);
+          // console.log(data[variable]);
+          // console.log(data[variable].name);
           document.getElementById(
             "repositories"
           ).innerHTML += `<div id="repos-div">
