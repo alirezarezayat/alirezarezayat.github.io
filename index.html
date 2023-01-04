@@ -20,7 +20,7 @@
     />
     <meta
       name="keywords"
-      content="Alireza,Rezayat,Alrieza ,Rezayat , Alireza, Rezayat, Alireza , Rezayat ,Alireza Rezayat,alireza_rezayat1,resume,cv,CV,alireza,rezayat,alrieza ,rezayat , alireza, rezayat, alireza , rezayat ,"
+      content="Alireza,Rezayat,Alrieza ,Rezayat , Alireza, Rezayat, Alireza , Rezayat ,Alireza Rezayat,alireza_rezayat1,resume,cv,CV,alireza,rezayat,alrieza ,rezayat , alireza, rezayat, alireza , rezayat , programmer , computer , developer ,"
     />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
@@ -32,7 +32,14 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <script src="app.js" type="text/javascript"></script>
+    <script src="app.js" type="text/javascript" defer></script>
+    <!--linkdin profile badge-->
+    <script
+      src="https://platform.linkedin.com/badges/js/profile.js"
+      async
+      defer
+      type="text/javascript"
+    ></script>
     <!-- Google tag (gtag.js) -->
     <script
       async
@@ -50,49 +57,129 @@
   </head>
 
   <body class="container">
-    <header>
+    <header class="row">
       <img
-        class="rounded img-thumbnail my-avatar col-3"
+        class="rounded rounded-5 my-avatar col-sm-3"
         id="avatar"
         alt="Image"
         src="./me.jpeg"
+        onclick="onClickAvatar()"
+        onpointerleave="onLeaveAvatar()"
+        onmouseover="onMouseOverAvatar()"
       />
-      <h1 id="name">Alireza Rezayat</h1>
-      <p id="bio"></p>
+      <div class="col">
+        <h1 id="name">Alireza Rezayat</h1>
+        <p id="bio">
+          I'm Alireza Rezayat and i enjoy to learn more about IT and technology
+        </p>
+      </div>
     </header>
-
-    <section>
-      <nav>
+    <!-- <nav id="navbar-example2" class="navbar fixed-bottom">
+      <a class="navbar-brand" href="#top">🔝</a>
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link" href="#scrollspyHeading1">First</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#scrollspyHeading2">Second</a>
+        </li>
+      </ul>
+    </nav> -->
+    <div class="row" id="top">
+      <aside class="col-sm-3">
         <h3>contact</h3>
         <h5>
-          mail :
+          Mail :
           <a href="mailto:alireza_rezayat1@yahoo.com"
             >alireza_rezayat1@yahoo.com</a
           >
         </h5>
-        <h5>phone : <a href="tel:+989337009122">+989337009122</a></h5>
-      </nav>
-      <article>
-        <div id="main">
-          <h1>hello</h1>
-          <p>
-            Hello ! I'm Alireza Rezayat and I enjoy to programming , develop , AI things and ... ! this website is for my resume and things that i want to share with you ! you can also find my other pages !
-          </p>
-          <p>
-            we have limit for life and doing somthing we love and like <br />
-            i hope to break this limit
-          </p>
-        </div>
-        <ul id="repositories"></ul>
-      </article>
-    </section>
+        <h5>Phone : <a href="tel:+989337009122">+989337009122</a></h5>
+        <h5>From : Iran , Tehran</h5>
+      </aside>
+      <section class="col">
+        <!-- <div
+          data-bs-spy="scroll"
+          data-bs-target="#navbar-example2"
+          data-bs-root-margin="0px 0px -40%"
+          data-bs-smooth-scroll="true"
+          class="scrollspy-example bg-light p-3 rounded-2"
+          tabindex="0"
+        >
+          <h4 id="scrollspyHeading1">First heading</h4>
+          <p>...</p>
+          <h4 id="scrollspyHeading2">Second heading</h4>
+          <p>...</p>
+        </div> -->
 
-    <aside></aside>
+        <article>
+          <div id="main">
+            <p>
+              Hello ! I'm Alireza Rezayat and I enjoy to programming , develop ,
+              AI things and ... ! this website is for my resume and things that
+              i want to share with you ! you can also find my other pages !
+            </p>
+            <p>
+              we have limit for life and doing somthing we love and like <br />
+              i hope to break this limit
+            </p>
+          </div>
+          <div class="progress">
+            <div
+              class="progress-bar progress-bar-striped progress-bar-animated"
+              role="progressbar"
+              aria-label="Animated striped"
+              aria-valuenow="75"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              style="width: 75%"
+            ></div>
+          </div>
+          <div>
+            <h3>My Github Repositories :</h3>
+            <div id="spinner" class="spinner-border text-primary" role="status">
+              <span class="visually-hidden">Loading...</span>
+            </div>
+            <div id="repositories" class="row g-2"></div>
+          </div>
+        </article>
+      </section>
+    </div>
 
-    <footer>
-      <a id="my-github-url"
-        ><i class="fa fa-github" style="font-size: 36px"></i>
-      </a>
+    <footer class="row">
+      <div class="col">
+        <a
+          id="my-github-url"
+          href="https://github.com/alirezarezayat"
+          class="row"
+          ><i class="fa fa-github" style="font-size: 36px"></i>alirezarezayat
+        </a>
+        <a href="https://t.me/alireza_rezayat1" class="row"
+          ><i class="fa fa-telegram" style="font-size: 36px"></i
+          >alireza_rezayat1
+        </a>
+        <a href="https://twitter.com/Alireza_Rezaya" class="row"
+          ><i class="fa fa-twitter" style="font-size: 36px"></i>alireza_rezaya
+        </a>
+        <a href="https://gitlab.com/alirezarezayat" class="row"
+          ><i class="fa fa-gitlab" style="font-size: 36px"></i>alirezarezayat
+        </a>
+        <a href="https://www.instagram.com/alireza_rezayat1/" class="row"
+          ><i class="fa fa-instagram" style="font-size: 36px"></i
+          >alireza_rezayat1
+        </a>
+      </div>
+      <div
+        class="badge-base LI-profile-badge col"
+        data-locale="en_US"
+        data-size="medium"
+        data-theme="dark"
+        data-type="VERTICAL"
+        data-vanity="alirezarezayat"
+        data-version="v1"
+      ></div>
+      <hr />
+      <p class="text-center">created by <strong>Alireza Rezayat</strong> 👋</p>
     </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
