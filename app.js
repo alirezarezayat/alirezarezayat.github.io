@@ -28,41 +28,41 @@ fetch("https://api.github.com/users/alirezarezayat")
       });
   });
 
-const avatar = document.getElementById("avatar");
-if (window.screen.width < 576) avatar.style.width = "33%";
+// const avatar = document.getElementById("avatar");
+// if (window.screen.width < 576) avatar.style.width = "33%";
 
-window.addEventListener("scroll", function () {
-  // console.log(this.document.activeElement);
-  // avatar.style.width = 33 + "%";
-  if (this.window.screen.width < 576)
-    if (
-      // document.body.scrollTop > 50 ||
-      // document.documentElement.scrollTop > 50 ||
-      this.document.documentElement.scrollTop < 250
-    ) {
-      avatar.style.width = "33%";
-    } else {
-      avatar.style.width = "max";
-    }
-  console.log(avatar.style.width);
-});
+// window.addEventListener("scroll", function () {
+//   // console.log(this.document.activeElement);
+//   // avatar.style.width = 33 + "%";
+//   if (this.window.screen.width < 576)
+//     if (
+//       // document.body.scrollTop > 50 ||
+//       // document.documentElement.scrollTop > 50 ||
+//       this.document.documentElement.scrollTop < 250
+//     ) {
+//       avatar.style.width = "33%";
+//     } else {
+//       avatar.style.width = "max";
+//     }
+//   console.log(avatar.style.width);
+// });
 
-function onClickAvatar() {
-  if (avatar.style.width != "40%") {
-    console.log(avatar.style.width);
-    if (avatar.style.width == "100%") {
-      avatar.style.width = "33%";
-    } else avatar.style.width = "40%";
-  } else {
-    avatar.style.width = "33%";
-  }
-  // avatar.removeAttribute("style");
-}
+// function onClickAvatar() {
+//   if (avatar.style.width != "40%") {
+//     console.log(avatar.style.width);
+//     if (avatar.style.width == "100%") {
+//       avatar.style.width = "33%";
+//     } else avatar.style.width = "40%";
+//   } else {
+//     avatar.style.width = "33%";
+//   }
+//   // avatar.removeAttribute("style");
+// }
 
-function onLeaveAvatar() {
-  avatar.style.width = "20%";
-}
+// function onLeaveAvatar() {
+//   avatar.style.width = "20%";
+// }
 
-function onMouseOverAvatar() {
-  avatar.style.width = "30%";
-}
+// function onMouseOverAvatar() {
+//   avatar.style.width = "30%";
+// }

@@ -2,19 +2,19 @@ a {
   text-decoration: none !important;
 }
 aside {
-  border-right: 2px solid black;
+  /* border-right: 2px solid black; */
 }
 body {
   background-color: #fff4cc;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   height: auto;
-  padding: 5 20px;
+  /* padding: 5 20px; */
 }
 
 footer {
   height: max-content;
-  background-color: burlywood;
-  padding: 5px 20px;
+  /* background-color: burlywood; */
+  /* padding: 5px 20px; */
   border-top: 1px solid black;
 }
 
@@ -24,7 +24,7 @@ header {
   top: 0; */
   /* z-index: 20; */
   background-color: #d2ffff;
-  padding: 5px;
+  /* padding: 5px; */
 }
 
 html {
@@ -34,38 +34,24 @@ html {
   background-attachment: fixed;
 }
 
-#name {
+/* #name {
   min-width: max-content;
-}
+} */
 
-.my-avatar {
-  /* min-width: 33% ; */
-  /* min-height: 33%; */
-  height: fit-content;
-  /* max-width: 33% !important; */
-  /* max-height: 33%; */
-  transition-property: width, height;
-  transition-duration: 2s;
-}
-.my-avatar:hover {
-  transition-property: width, height;
-  transition-duration: 2s;
-  width: 33%;
-}
 
 #repositories {
-  padding-inline-start: 5px;
-  padding-bottom: 10px;
+  /* padding-inline-start: 5px; */
+  /* padding-bottom: 10px; */
 }
 
 #repos-div {
   background: #ccc;
-  border-radius: 25px;
-  margin: 5px;
-  padding: 5px;
+  /* border-radius: 25px; */
+  /* margin: 5px; */
+  /* padding: 5px; */
 }
 
 #navbar-example2 {
-  position: sticky;
-  top: 0px;
+  /* position: sticky; */
+  /* top: 0px; */
 }

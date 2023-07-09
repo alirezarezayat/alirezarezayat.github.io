@@ -11,17 +11,42 @@
       sizes="16x16"
     />
     <link href="style.css" rel="stylesheet" />
+    <script src="app.js" type="text/javascript" defer></script>
+    <!--schema.org script-->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org/",
+        "@type": "Person",
+        "name": "Alireza Rezayat",
+        "url": "https://alirezarezayat.github.io/",
+        "image": "https://alirezarezayat.github.io/me.jpeg",
+        "jobTitle": "Developer",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Open to work"
+        },
+        "description": "Hi guys 👋 I'm Alireza Rezayat. I'm interested in technology and I always follow the news about it to improve my knowledge 💻 Beside Programming and developing, I like AI and ML 💪",
+        "sameAs": [
+          "https://www.linkedin.com/in/alireza-rezayat-9544601aa",
+          "https://github.com/alirezarezayat",
+          "https://twitter.com/alireza_rezaya",
+          "http://www.instagram.com/alireza_rezayat1"
+        ]
+      }
+    </script>
+    <!--meta tags-->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Alireza Rezayat" />
     <meta
       name="description"
-      content="Hello ! I'm Alireza Rezayat and I enjoy to programming , develop , AI things and ... ! this website is for my resume and things that i want to share with you ! you can also find my other pages !"
+      content="Alireza Rezayat is a programmer, developer, and AI enthusiast. This website serves as his resume and a platform to share his projects and ideas."
     />
     <meta
       name="keywords"
-      content="Alireza,Rezayat,Alrieza ,Rezayat , Alireza, Rezayat, Alireza , Rezayat ,Alireza Rezayat,alireza_rezayat1,resume,cv,CV,alireza,rezayat,alrieza ,rezayat , alireza, rezayat, alireza , rezayat , programmer , computer , developer ,"
+      content="Alireza Rezayat, resume, cv, programmer, developer, AI, computer, technology, Iran, Tehran"
     />
+    <!--bootstrap-->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -32,11 +57,9 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <script src="app.js" type="text/javascript" defer></script>
     <!--linkdin profile badge-->
     <script
       src="https://platform.linkedin.com/badges/js/profile.js"
-      async
       defer
       type="text/javascript"
     ></script>
@@ -56,38 +79,70 @@
     </script>
   </head>
 
-  <body class="container">
-    <header class="row">
+  <body class="container shadow">
+    <header class="row p-2">
       <img
-        class="rounded rounded-5 my-avatar col-sm-3"
-        id="avatar"
-        alt="Image"
+        class="rounded rounded-5 col-5 col-md-4 col-lg-3 col-xl-2 my-auto"
+        alt="Alireza Rezayat's profile picture"
         src="./me.jpeg"
-        onclick="onClickAvatar()"
-        onpointerleave="onLeaveAvatar()"
-        onmouseover="onMouseOverAvatar()"
+        style="max-width: 460px; max-height: 460px; height: max-content"
       />
-      <div class="col">
-        <h1 id="name">Alireza Rezayat</h1>
+      <div class="col-7">
+        <h1>Alireza Rezayat</h1>
         <p id="bio">
-          I'm Alireza Rezayat and i enjoy to learn more about IT and technology
+          Hi guys 👋<br />I'm Alireza Rezayat<br />I'm interested in technology
+          and I always follow the news about it to improve my knowledge 💻<br />Beside
+          Programming and developing, I like AI and ML 💪
         </p>
       </div>
     </header>
-    <!-- <nav id="navbar-example2" class="navbar fixed-bottom">
-      <a class="navbar-brand" href="#top">🔝</a>
-      <ul class="nav nav-pills">
-        <li class="nav-item">
-          <a class="nav-link" href="#scrollspyHeading1">First</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#scrollspyHeading2">Second</a>
-        </li>
-      </ul>
-    </nav> -->
-    <div class="row" id="top">
-      <aside class="col-sm-3">
-        <h3>contact</h3>
+    <main class="row bg-light">
+      <div class="col">
+        <section class="col">
+          <!-- <div
+            data-bs-spy="scroll"
+          data-bs-target="#navbar-example2"
+          data-bs-root-margin="0px 0px -40%"
+          data-bs-smooth-scroll="true"
+          class="scrollspy-example bg-light p-3 rounded-2"
+          tabindex="0"
+          >
+          <h4 id="scrollspyHeading1">First heading</h4>
+          <p>...</p>
+          <h4 id="scrollspyHeading2">Second heading</h4>
+          <p>...</p>
+        </div> -->
+
+          <article>
+            <div id="main">
+              <p>
+                Hello ! I'm Alireza Rezayat and I enjoy to programming , develop
+                , AI things and ... ! this website is for my resume and things
+                that i want to share with you ! you can also find my other pages
+                !
+              </p>
+              <p>
+                we have limit for life and doing somthing we love and like
+                <br />
+                i hope to break this limit
+              </p>
+            </div>
+            <div>
+              <h3>My Github Repositories :</h3>
+              <div
+                id="spinner"
+                class="spinner-border text-primary"
+                role="status"
+              >
+                <span class="visually-hidden">Loading...</span>
+              </div>
+              <div id="repositories" class="row g-2"></div>
+            </div>
+          </article>
+        </section>
+      </div>
+      <aside class="col-auto">
+        <h2>Personal Info</h2>
         <h5>
           Mail :
           <a href="mailto:alireza_rezayat1@yahoo.com"
@@ -97,75 +152,30 @@
         <h5>Phone : <a href="tel:+989337009122">+989337009122</a></h5>
         <h5>From : Iran , Tehran</h5>
       </aside>
-      <section class="col">
-        <!-- <div
-          data-bs-spy="scroll"
-          data-bs-target="#navbar-example2"
-          data-bs-root-margin="0px 0px -40%"
-          data-bs-smooth-scroll="true"
-          class="scrollspy-example bg-light p-3 rounded-2"
-          tabindex="0"
-        >
-          <h4 id="scrollspyHeading1">First heading</h4>
-          <p>...</p>
-          <h4 id="scrollspyHeading2">Second heading</h4>
-          <p>...</p>
-        </div> -->
-
-        <article>
-          <div id="main">
-            <p>
-              Hello ! I'm Alireza Rezayat and I enjoy to programming , develop ,
-              AI things and ... ! this website is for my resume and things that
-              i want to share with you ! you can also find my other pages !
-            </p>
-            <p>
-              we have limit for life and doing somthing we love and like <br />
-              i hope to break this limit
-            </p>
-          </div>
-          <div class="progress">
-            <div
-              class="progress-bar progress-bar-striped progress-bar-animated"
-              role="progressbar"
-              aria-label="Animated striped"
-              aria-valuenow="75"
-              aria-valuemin="0"
-              aria-valuemax="100"
-              style="width: 75%"
-            ></div>
-          </div>
-          <div>
-            <h3>My Github Repositories :</h3>
-            <div id="spinner" class="spinner-border text-primary" role="status">
-              <span class="visually-hidden">Loading...</span>
-            </div>
-            <div id="repositories" class="row g-2"></div>
-          </div>
-        </article>
-      </section>
-    </div>
-
+    </main>
     <footer class="row">
       <div class="col">
         <a
           id="my-github-url"
           href="https://github.com/alirezarezayat"
           class="row"
-          ><i class="fa fa-github" style="font-size: 36px"></i>alirezarezayat
+          ><i class="fa fa-github text-dark" style="font-size: 36px"></i
+          >alirezarezayat
         </a>
         <a href="https://t.me/alireza_rezayat1" class="row"
-          ><i class="fa fa-telegram" style="font-size: 36px"></i
+          ><i class="fa fa-telegram text-primary" style="font-size: 36px"></i
           >alireza_rezayat1
         </a>
         <a href="https://twitter.com/Alireza_Rezaya" class="row"
-          ><i class="fa fa-twitter" style="font-size: 36px"></i>alireza_rezaya
+          ><i class="fa fa-twitter text-info" style="font-size: 36px"></i
+          >alireza_rezaya
         </a>
         <a href="https://gitlab.com/alirezarezayat" class="row"
-          ><i class="fa fa-gitlab" style="font-size: 36px"></i>alirezarezayat
+          ><i class="fa fa-gitlab text-warning" style="font-size: 36px"></i
+          >alirezarezayat
         </a>
         <a href="https://www.instagram.com/alireza_rezayat1/" class="row"
-          ><i class="fa fa-instagram" style="font-size: 36px"></i
+          ><i class="fa fa-instagram text-danger" style="font-size: 36px"></i
           >alireza_rezayat1
         </a>
       </div>
@@ -179,7 +189,7 @@
         data-version="v1"
       ></div>
       <hr />
-      <p class="text-center">created by <strong>Alireza Rezayat</strong> 👋</p>
+      <p>&copy; 2023 Alireza Rezayat Resume Page. All rights reserved.</p>
     </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
